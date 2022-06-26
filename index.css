@@ -443,3 +443,98 @@ h2 {
   margin-left: 96%;
   padding: 10px 15px;
 }
+
+
+
+.service-time {
+  float: left;
+  width: 100%;
+  min-height: 350px;
+  margin-top: -350px;
+  padding: 50px;
+  color: #fff;
+  position: relative;
+}
+.info-icon {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 75px;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.service-time h3 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin: -5px 0 15px 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: none;
+}
+.service-time p {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+.service-time ul {
+  margin: 0;
+  list-style: none;
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+.service-time ul li {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  border-bottom: dashed 1px #fff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.left {
+float:left;
+}
+.right {
+float:right;
+}
+
+
+.service-time.middle::before {
+
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background: transparent;
+  position: absolute;
+  bottom: 0px;
+  z-index: 0;
+  border-bottom: solid transparent 65px;
+  border-right: solid #a0cff7 70px;
+  left: -70px;
+
+}
+
+.service-time.middle::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background: transparent;
+  position: absolute;
+  bottom: 0px;
+  z-index: 0;
+  border-bottom: solid transparent 65px;
+  border-left: solid #a0cff7 70px;
+  right: -70px;
+}
+
+.service-time.one {
+  position: relative;
+  z-index: 1;
+}
