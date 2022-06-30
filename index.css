@@ -43,7 +43,9 @@ body {
 .left_div {
   flex: 35%;
   height: 550px;
-  background-color: #14274e5f;
+  /* background-color: #14274e5f; */
+  background-color: #14274ebe;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
 }
 
 .right_div {
@@ -74,7 +76,29 @@ body {
   letter-spacing: 2px;
 }
 
-/* <!-- START: Speciality Section --> */
+/* ====================contact timings========================================= */
+.timing_container{
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.left_timing_container {
+  flex: 50%;
+  display: flex;
+}
+.right_timing_container{
+  flex: 50%;
+}
+
+.cafe_infra{
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 10%;
+  flex: 1;
+  width: 600px;
+  height: 300px;
+}
+
+/* <!-- ======================START: Speciality Section================================= --> */
 
 .heading {
   text-align: center;
@@ -426,10 +450,12 @@ h2 {
   display: flex;
 }
 .Footer_container i{
-  border-radius: 30%;
-  padding: 15px 15px;
+  border-radius: 40%;
+  padding: 10px 10px;
   margin-right: 8px;
   background-color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .Footer_container div{
   align-items: center;
