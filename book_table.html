@@ -33,14 +33,14 @@
             <li class="list_item"><a href="./Speciality.html">Speciality</a></li>
             <li class="list_item"><a href="./menu.html">Menu</a></li>
             <li class="list_item"><a href="./book_table.html">Book Table</a></li>
-            <li class="list_item"><a href="#">Contact Us</a></li>
+            <li class="list_item"><a href="./contact.html">Contact Us</a></li>
             <li class="list_item"><a href="./review.html">Review</a></li>
         </ul>
     </nav>
     <!-- book table -->
     <h1 class="title_of_menu" id="Order">Reserve Your Table..!!</h1>
     <div id="Book_table_contaier">
-        <div class="left_part_table_container">
+        <!-- <div class="left_part_table_container">
             <h2>- CONTACT US -</h2>
             <h3>Here You Can Make A Reservation Or Just walkin to our cafe.</h3><br><br>
             <div class="Contact">
@@ -64,16 +64,16 @@
                 </div>
             </div>
             <br><br>
-        </div>
+        </div> -->
 
         <div class="right_part_table_container">
-            <form action="#">
+            <form method="POST" action="">
                 <h2 id="book_table_title">BOOK TABLE</h2>
-                <input type="text" placeholder="Name*"> <input type="email" placeholder="Email"><br>
-                <input type="tel" placeholder="Phone No*"> <input type="number" placeholder="Number of guests*"><br>
-                <input type="date" placeholder="dd/mm/yyyy"> <input type="time" placeholder="Time"><br>
-                <textarea name="text" placeholder="Message if any" id="" cols="30" rows="5"></textarea><br>
-                <button type="submit" id="submit_id" class="submit_button_class">Make A Reservation</button>
+                <input type="text" placeholder="Name*" name="Name"> <input type="email" placeholder="Email" name="Email"><br>
+                <input type="tel" placeholder="Phone No*" name="Phone_No"> <input type="number" placeholder="Number of guests*" name="No_of_guests"><br>
+                <input type="date" placeholder="dd/mm/yyyy" name="Date"> <input type="time" placeholder="Time" name="Time"><br>
+                <textarea name="Message" placeholder="Message if any" id="" cols="30" rows="5"></textarea><br>
+                <button type="submit" id="submit_id" class="submit_button_class" value="Submit">Make A Reservation</button>
             </form>
         </div>
     </div>

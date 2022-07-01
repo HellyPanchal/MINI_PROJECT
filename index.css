@@ -226,9 +226,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   color: white;
-  height: 90vh;
 }
 
 .Contact {
@@ -242,20 +240,41 @@ body {
 }
 
 .left_part_table_container {
-  flex: 50%;
-  margin-top: 8%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 3%;
 }
 
-.right_part_table_container {
-  flex: 50%;
+.phone i{
+  background-color:#14274E; 
+  padding: 25px 25px; 
+  border-radius: 50%; 
+  position:absolute; 
+  margin-left: 36%;
+  margin-top: -2.5%; 
+  color: white;
+}
+.message i{
+  background-color:#14274E; 
+  padding: 25px 25px; 
+  border-radius: 50%; 
+  position:absolute; 
+  margin-left: 8%;
+  margin-top: -2.5%;  
+  color: white;
+}
+
+.right_part_table_container{
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 .right_part_table_container form {
   background: white;
   color: black;
-  margin-top: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
   border-radius: 10px;
 }
 
@@ -264,7 +283,7 @@ textarea {
   height: 30px;
   width: 40%;
   outline: none;
-  margin-left: 20px;
+  margin-left: 25px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid lightgrey;
@@ -282,7 +301,7 @@ textarea {
   font-family: 'Paytone One', sans-serif;
   font-size: 30px;
   color: #14274E;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -404,18 +423,6 @@ h2 {
   transition: all 0.3s ease;
 }
 
-#select_star {
-  margin-left: 9%;
-  height: 80%;
-  width: 75%;
-  outline: none;
-  padding-left: 20px;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-
 .button {
   margin-top: 5%;
   margin-bottom: 7%;
@@ -437,6 +444,63 @@ h2 {
 .button:hover {
   background-color: #14274eca;
   transform: translateY(10%);
+}
+
+.feedback_container {
+  position: absolute;
+}
+
+.rating {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(180deg);
+  display: flex;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  display: block;
+  cursor: pointer;
+  width: 25px;
+}
+
+.rating label::before {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: relative;
+  display: block;
+  font-size: 25px;
+  color: #14274E;
+  display: flex;
+  flex: 1;
+}
+
+.rating label::after {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 25px;
+  color: #1f9cff;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, .8);
+}
+
+.rating label:hover::after,
+.rating label:hover~label::after,
+.rating input:checked~label::after {
+  opacity: 1;
+}
+
+#review_stars{
+  position: absolute;
+  margin: 3.5% 30%;
 }
 
 /* ----------------------footer---------------- */
@@ -564,3 +628,5 @@ float:right;
   position: relative;
   z-index: 1;
 }
+
+

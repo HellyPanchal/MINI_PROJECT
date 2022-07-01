@@ -33,7 +33,7 @@
             <li class="list_item"><a href="./Speciality.html">Speciality</a></li>
             <li class="list_item"><a href="./menu.html">Menu</a></li>
             <li class="list_item"><a href="./book_table.html">Book Table</a></li>
-            <li class="list_item"><a href="#">Contact Us</a></li>
+            <li class="list_item"><a href="./contact.html">Contact Us</a></li>
             <li class="list_item"><a href="./review.html">Review</a></li>
         </ul>
     </nav><!-- review us -->
@@ -47,22 +47,40 @@
                 </div>
                 <div class="row">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Name"><br>
+                    <input type="text" placeholder="Name" required><br>
                 </div>
                 <div class="row">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="text" placeholder="Email"><br>
+                    <input type="text" placeholder="Email" required><br>
                 </div>
                 <div class="row">
                     <p class="form_para">Rate our overall services.</p>
                     <i class="fa-solid fa-heart"></i>
-                    <select name="Star" id="select_star">
+                    <button id="review_stars">
+                        <div class="feedback_container" style="position: relative ;">
+
+                            <div class="rating" style="position: absolute;>
+                                <input type=" radio" name="star" id="star1">
+                                <label for="star1"></label>
+                                <input type="radio" name="star" id="star2">
+                                <label for="star2"></label>
+                                <input type="radio" name="star" id="star3">
+                                <label for="star3"></label>
+                                <input type="radio" name="star" id="star4">
+                                <label for="star4"></label>
+                                <input type="radio" name="star" id="star5">
+                                <label for="star5"></label>
+                            </div>
+                        </div>
+                    </button>
+
+                    <!-- <select name="Star" id="select_star">
                         <option value="1star">1</option>
                         <option value="2stars">2</option>
                         <option value="3stars">3</option>
                         <option value="4stars">4</option>
                         <option value="5stars">5</option>
-                    </select>
+                    </select> -->
                 </div>
                 <div class="row">
                     <p class="form_para">Your feedback</p>
@@ -70,12 +88,16 @@
                     <textarea name="textarea" id="review_remarks" cols="50" rows="2"
                         placeholder="Your Review"></textarea>
                 </div>
-                <input type="button" class="button" value="Submit">
+                <input type="button" class="button"  id="my_submit_btn" onclick="myFunction()" value="Submit">
             </form>
         </div>
         <button class="Go_to_up"><a href="#Home"><i class="fa-solid fa-angle-up"></i></a></button>
     </div>
-
+    <script>
+        function myFunction() {
+                alert("Your Feedback Successfully Submited \nThank You...!!!")
+        }
+    </script>
     <!-- Footer section -->
     <footer>
         <div class="Footer_container">
