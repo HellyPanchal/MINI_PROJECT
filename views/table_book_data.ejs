@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Pacifico&family=Paytone+One&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    body {
+        margin-top: 0px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Pacifico', cursive;
+        color: #14274E;
+        font-weight: bolder;
+        text-shadow: 9px 5px 6px #0000004e;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    th,
+    td {
+        text-align: center;
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+    th {
+        background-color: #14274E;
+        color: white;
+    }
+
+    tr:hover {background-color: #ddd;}
+</style>
+
+<body>
+    <h1>User Table Booking Data</h1>
+    <div class="bookTable-data">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone_No</th>
+                <th>No_of_guests</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Message</th>
+            </tr>
+            <% table_book_data.forEach( data => { %>
+            <tr>
+                <td> <%= data.Name %> </td>
+                <td> <%= data.Email %> </td>
+                <td> <%= data.Phone_No %> </td>
+                <td> <%= data.No_of_guests %> </td>
+                <td> <%= data.Date %> </td>
+                <td> <%= data.Time %> </td>
+                <td> <%= data.Message %> </td>
+            </tr>
+            <% }) %>
+        </table>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,773 @@
+body {
+  margin: 0;
+  display: block;
+}
+
+.nav_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #14274E;
+}
+
+.list_item {
+  float: left;
+  justify-items: center;
+}
+
+.list_item a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+
+.list_item a:hover {
+  background-color: rgb(90, 91, 117);
+  color: white;
+}
+
+.logo img {
+  padding-right: 25%;
+  padding-left: 5%;
+}
+
+
+/* =================================second div========================================= */
+.container {
+  display: flex;
+}
+
+.left_div {
+  flex: 35%;
+  height: 550px;
+  /* background-color: #14274e5f; */
+  background-color: #14274ebe;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+}
+
+.right_div {
+  flex: 65%;
+  display: flex;
+}
+
+.right_div img {
+  flex: 1;
+  width: 860px;
+  height: 550px;
+}
+
+#title {
+  font-family: 'Pacifico', cursive;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 250PX;
+  margin-bottom: 0px;
+}
+
+#slogan {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* ====================contact timings========================================= */
+.timing_container{
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.left_timing_container {
+  flex: 50%;
+  display: flex;
+}
+.right_timing_container{
+  flex: 50%;
+}
+
+.cafe_infra{
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 10%;
+  flex: 1;
+  width: 600px;
+  height: 300px;
+}
+
+.right_timing_container h3{
+  margin-bottom: 0px;
+  margin-top: 5px ;
+  opacity: 80%;
+}
+
+/* ==================================infra========================================== */
+
+.infra_pic_column {
+  float: left;
+  width: 24%;
+  height: 40%;
+  padding: 5px;
+  margin-bottom: 3;
+}
+
+/* Clearfix (clear floats) */
+.Infrastruture_container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* ================================================================================== */
+
+
+/* <!-- ======================START: Speciality Section================================= --> */
+
+.heading {
+  text-align: center;
+  margin: 5% auto;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  color: #14274E;
+  font-weight: bolder;
+  text-shadow: 9px 5px 6px #00000078;
+}
+
+#food_logos {
+  margin: 0% 0%;
+}
+
+.speciality .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.speciality .box-container .box {
+  flex: 1 1 20rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 2rem rgb(0 0 0 / 50%);
+  cursor: pointer;
+  border-radius: .5rem;
+  height: 27rem;
+}
+
+.speciality .box-container .box .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+
+.speciality .box-container .box .content {
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+}
+
+.speciality .box-container .box .content img {
+  margin: 2.1rem 0;
+  width: 100px;
+  height: 100px;
+}
+
+.speciality .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #484848;
+}
+
+.speciality .box-container .box .content p {
+  font-size: 1.3rem;
+  color: #484848;
+  line-height: 2rem;
+}
+
+.speciality .box-container .box:hover .image {
+  top: 0;
+}
+
+.speciality .box-container .box:hover .content {
+  transform: translateY(100%);
+}
+
+.top{
+  margin-top: 2000px;
+  position: fixed;
+}
+
+
+/* =============================================menu=========================================== */
+.Menu_container_div {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  border: 1.5px solid black;
+  align-self: center;
+  border-collapse: collapse;
+  margin-bottom: 3%;
+  background: url(.//photos/bg.jpg);
+}
+
+.title {
+  text-align: center;
+}
+
+.menu td {
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 2rem;
+}
+
+.title_of_menu {
+  text-align: center;
+  margin: 2% auto;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  color: #14274E;
+  font-weight: bolder;
+  text-shadow: 9px 5px 6px #00000078;
+}
+
+.food_title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+}
+
+/* =================book table============================ */
+
+#Book_table_contaier {
+  background: url(./photos/reservation-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.Contact {
+  display: flex;
+}
+
+.Contact a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+}
+
+.left_part_table_container {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 3%;
+}
+
+.phone i{
+  background-color:#14274E; 
+  padding: 25px 25px; 
+  border-radius: 50%; 
+  position:absolute; 
+  margin-left: 36%;
+  margin-top: -2.5%; 
+  color: white;
+}
+.message i{
+  background-color:#14274E; 
+  padding: 25px 25px; 
+  border-radius: 50%; 
+  position:absolute; 
+  margin-left: 8%;
+  margin-top: -2.5%;  
+  color: white;
+}
+
+.right_part_table_container{
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.right_part_table_container form {
+  background: white;
+  color: black;
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 10px;
+}
+
+.right_part_table_container form input,
+textarea {
+  height: 30px;
+  width: 40%;
+  outline: none;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  padding-left: 10px;
+}
+
+.right_part_table_container form textarea {
+  width: 87%;
+  height: 30%;
+}
+
+#book_table_title {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 30px;
+  color: #14274E;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#submit_id {
+  margin-top: 1%;
+  margin-bottom: 5%;
+  margin-left: 30%;
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: #14274E;
+  border-radius: 5px;
+  border: none;
+}
+
+#submit_id:hover {
+  background-color: #14274eca;
+  transform: translateY(10%);
+}
+
+.left_part_table_container h3,
+h2 {
+  text-align: center;
+}
+
+
+/* -------------------review us------------------------ */
+/* .Review_container {
+  margin: 0% 5%;
+} */
+/* 
+.Review {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: url(.//photos/reservation-bg.jpg);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.Review form {
+  border-radius: 15px;
+  background-color: aliceblue;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: left;
+  display: table;
+  width: 40%;
+}
+
+.review_headings {
+  text-align: center;
+}
+
+.review_headings h1 {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: bolder;
+}
+
+.review_headings h3 {
+  margin-top: 0;
+  font-family: 'Caveat', cursive;
+}
+
+.form_para {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #14274E;
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+}
+
+.form_class .row i {
+  position: absolute;
+  width: 47px;
+  height: 75%;
+  color: #fff;
+  font-size: 18px;
+  background: #14274E;
+  border: 1px solid #14274E;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_class .row {
+  height: 45px;
+  margin-left: 15%;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form_class .row input {
+  height: 70%;
+  width: 70%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form_class textarea {
+  height: 70%;
+  width: 70%;
+  outline: none;
+  padding-left: 40px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.button {
+  margin-top: 5%;
+  margin-bottom: 7%;
+  position: relative;
+  margin-left: 40%;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #14274E;
+  border-radius: 7px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #14274eca;
+  transform: translateY(10%);
+}
+
+.feedback_container {
+  position: absolute;
+}
+
+.rating {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(180deg);
+  display: flex;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  display: block;
+  cursor: pointer;
+  width: 25px;
+}
+
+.rating label::before {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: relative;
+  display: block;
+  font-size: 25px;
+  color: #14274E;
+  display: flex;
+  flex: 1;
+}
+
+.rating label::after {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 25px;
+  color: #1f9cff;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, .8);
+}
+
+.rating label:hover::after,
+.rating label:hover~label::after,
+.rating input:checked~label::after {
+  opacity: 1;
+}
+
+.feedback_container{
+  position: absolute;
+  margin: 3.5% 30%;
+} */
+
+.Review {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: url(.//photos/reservation-bg.jpg);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.Review form {
+  border-radius: 15px;
+  background-color: aliceblue;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: left;
+  display: table;
+  width: 40%;
+}
+
+.review_headings {
+  text-align: center;
+}
+
+.review_headings h1 {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: bolder;
+}
+
+.review_headings h3 {
+  margin-top: 0;
+  font-family: 'Caveat', cursive;
+}
+
+.form_para {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #14274E;
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+}
+
+.form_class .row i {
+  position: absolute;
+  width: 47px;
+  height: 75%;
+  color: #fff;
+  font-size: 18px;
+  background: #14274E;
+  border: 1px solid #14274E;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_class .row {
+  height: 45px;
+  margin-left: 15%;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form_class .row input {
+  height: 70%;
+  width: 70%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form_class textarea {
+  height: 70%;
+  width: 70%;
+  outline: none;
+  padding-left: 40px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#select_star {
+  margin-left: 9%;
+  height: 80%;
+  width: 75%;
+  outline: none;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.button {
+  margin-top: 5%;
+  margin-bottom: 7%;
+  position: relative;
+  margin-left: 40%;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #14274E;
+  border-radius: 7px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #14274eca;
+  transform: translateY(10%);
+}
+
+
+/* ----------------------footer---------------- */
+.Footer_container{
+  margin-top: 0.1%;
+  /* padding-top: 3%;
+  padding-bottom: 3%; */
+  background: #14274E;
+  color: #14274E;
+  padding-left: 5%;
+  display: flex;
+}
+.Footer_container i{
+  border-radius: 40%;
+  padding: 10px 10px;
+  margin-right: 8px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.Footer_container div{
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 100%;
+}
+
+
+.service-time {
+  float: left;
+  width: 100%;
+  min-height: 350px;
+  margin-top: -350px;
+  padding: 50px;
+  color: #fff;
+  position: relative;
+}
+.info-icon {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 75px;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.service-time h3 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin: -5px 0 15px 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: none;
+}
+.service-time p {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+.service-time ul {
+  margin: 0;
+  list-style: none;
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+.service-time ul li {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  border-bottom: dashed 1px #fff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.left {
+float:left;
+}
+.right {
+float:right;
+}
+
+
+.service-time.middle::before {
+
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background: transparent;
+  position: absolute;
+  bottom: 0px;
+  z-index: 0;
+  border-bottom: solid transparent 65px;
+  border-right: solid #a0cff7 70px;
+  left: -70px;
+
+}
+
+.service-time.middle::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background: transparent;
+  position: absolute;
+  bottom: 0px;
+  z-index: 0;
+  border-bottom: solid transparent 65px;
+  border-left: solid #a0cff7 70px;
+  right: -70px;
+}
+
+.service-time.one {
+  position: relative;
+  z-index: 1;
+}
+
+
